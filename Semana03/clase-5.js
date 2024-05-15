@@ -171,11 +171,8 @@ function mostrarDatosEnPerfil(albumes) {
   spanCantAlbums.innerText = contentSpanCant;
 
   //2. cantidad de favoritos
-  console.log(albumes);
-  const arrayFavorites = [];
-  albumes.forEach((element) =>
-    element.like ? arrayFavorites.push(element) : null
-  );
+  const arrayFavorites = albumes.filter((element) =>element.like );
+
   const spanCantFavorites = document.getElementById("cant-favoritos");
   const countFavorites = arrayFavorites.length;
   let contentSpanFavorites = `${countFavorites}`;
