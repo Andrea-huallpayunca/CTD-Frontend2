@@ -183,5 +183,5 @@ function mostrarDatosEnPerfil(albumes) {
   }
   spanCantFavorites.innerText = contentSpanFavorites;
 }
-
+// try1
 mostrarDatosEnPerfil(albumesFamosos);
