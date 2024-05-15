@@ -171,7 +171,7 @@ function mostrarDatosEnPerfil(albumes) {
   spanCantAlbums.innerText = contentSpanCant;
 
   //2. cantidad de favoritos
-  const arrayFavorites = albumes.filter((element) =>element.like );
+  const arrayFavorites = albumes.filter((element) => element.like);
 
   const spanCantFavorites = document.getElementById("cant-favoritos");
   const countFavorites = arrayFavorites.length;
@@ -183,4 +183,5 @@ function mostrarDatosEnPerfil(albumes) {
   }
   spanCantFavorites.innerText = contentSpanFavorites;
 }
+
 mostrarDatosEnPerfil(albumesFamosos);
